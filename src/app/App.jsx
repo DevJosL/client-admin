@@ -16,12 +16,12 @@ function App() {
       }}
       />
 
-      <button 
+      {/*<button 
       onClick={() => toast("¡Hola, mundo!")}
       style={{margin:"20px"}}
       >
         Mensaje 
-      </button>
+      </button>*/}
 
       <AppRoutes />
     </>

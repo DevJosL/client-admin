@@ -4,10 +4,9 @@ import { Sidebar } from "./Sidebar.jsx";
 export const DashboardContainer = () => {
 
     return (
-        <div className="min-h-screen bg-gray-50
-        flex flex-col">
+        <div className="min-h-screen bg-gray-50 flex flex-col">
             {/*Navbar */}
-            <Navbar/>
+            <Navbar />
 
             <div className="flex flex-1">
                 {/*Sidebar */}
@@ -15,7 +14,7 @@ export const DashboardContainer = () => {
 
                 <main className="flex-1 p-6">
                     {/* Children */}
-                    Contenido del menú
+                    <Outlet />
                 </main>
             </div>
 
