@@ -22,6 +22,11 @@ export const Fields = () => {
         getFields();
     }, [getFields]);
 
+    useToastEffect(() => {
+        if (error) {
+            showError(error);
+        }
+    }, [error]);
 
     return (
         <div className="p-4">
@@ -42,6 +47,9 @@ export const Fields = () => {
             </div>
 
             {/* GRID */}
+            {fields.map((field) => {
+
+            })}
             <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
 
                 {/* CARD */}
